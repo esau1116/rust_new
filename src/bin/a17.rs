@@ -11,5 +11,7 @@
 // * Search for functionality to transform a string (or str)
 //   to uppercase and lowercase
 //   * Try searching for: to_uppercase, to_lowercase
-
-fn main() {}
+fn main(){
+    let s = "KAKURU";
+    println!("my name is {:?},", s.to_lowercase());
+}
