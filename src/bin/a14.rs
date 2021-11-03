@@ -10,15 +10,37 @@
 // * Iterate through the vector using a for..in loop
 // * Use an if expression to determine which person's info should be printed
 // * The name and colors should be printed using a function
-struct person {
+struct Person {
     age: u32,
     name: String,
     fav_color: String,
+} 
+fn print(data:&str){
+    println!("{:?}", data);
 }
-fn 
 fn main() {
     let vector = vec![
-        
-    ]
-
+        Person{
+            age:12,
+            name:String::from("Paige"),
+            fav_color:String::from("blue"),
+        },
+        Person{
+            age:9,
+            name:String::from("winnie"),
+            fav_color:String::from("orange"),
+        },
+        Person{
+            age:13,
+            name:String::from("abe"),
+            fav_color:String::from("pink"),
+        },
+    ];
+    for ans in vector{
+        if ans.age >= 10{
+            print(&ans.name);
+            print(&ans.fav_color);
+        }
+    }
+    
 }
