@@ -7,13 +7,14 @@
 // Notes:
 // * Use a struct to encapsulate the box characteristics
 struct box_char{
-    dimension:u8,
+    dimension:Dimensions,
     weight: i32,
-    color; string,
+    color; Color,
 }
 // * Use an enum for the box color
 enum Color{
     blue,
+    red
 }
 // * Implement functionality on the box struct to create a new box
 impl{
