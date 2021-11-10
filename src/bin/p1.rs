@@ -17,5 +17,13 @@
 //   throughout your program.
 // * Create your program starting at level 1. Once finished, advance to the
 //   next level.
+struct Bill_text{
+    name: String,
+    amonut_owed: i32,
+}
+impl Bill_text{
+    fn Bills(bills:) -> u32{
 
+
+}
 fn main() {}
